@@ -8,7 +8,7 @@ class Koperasi extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('Koperasi_model');
-
+        $this->load->library('pagination');
     }
     
     public function index()
