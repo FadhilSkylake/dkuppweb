@@ -1,17 +1,17 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
         
-class Dashboard extends CI_Controller {
+class Pasar extends CI_Controller {
 
     public function index()
     {
-        $data['title'] = 'Dashboard';
+        $data['title'] = 'Pasar';
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
-        $this->load->view('dashboard');
+        $this->load->view('pasar');
         $this->load->view('templates/footer');
     }
 }
 
-/* End of file Dashboard.php and path \application\controllers\Dashboard.php */
+/* End of file Pasar.php and path \application\controllers\Pasar.php */
