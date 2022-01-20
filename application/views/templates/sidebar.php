@@ -43,43 +43,43 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('dashboard')?>" class="nav-link">
                 <i class="fas fa-tachometer-alt nav-icon"></i>
                   <p>Dashboard</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('koperasi')?>" class="nav-link">
                 <i class="fas fa-balance-scale nav-icon"></i>
                   <p>Koperasi</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('perdagangan')?>" class="nav-link">
                 <i class="fas fa-chart-line nav-icon"></i>
                   <p>Perdagangan</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('industri')?>" class="nav-link">
                 <i class="fas fa-industry nav-icon"></i>
                   <p>Industri</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('umkm')?>" class="nav-link">
                 <i class="fas fa-cookie-bite nav-icon"></i>
                   <p>UMKM</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('pasar')?>" class="nav-link">
                 <i class="fas fa-shopping-bag nav-icon"></i>
                   <p>Pasar</p>
                 </a>
           </li>
           <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('sekretariat')?>" class="nav-link">
                 <i class="fas fa-users nav-icon"></i>
                   <p>Sekretariat</p>
                 </a>
@@ -98,12 +98,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Starter Page</h1>
+            <h1 class="m-0 text-dark"><?= $title ?></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
+              <li class="breadcrumb-item"><a href="#">DKUPP</a></li>
+              <li class="breadcrumb-item active"><?= $title ?></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
