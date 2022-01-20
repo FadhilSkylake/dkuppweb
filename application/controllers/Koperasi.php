@@ -14,7 +14,7 @@ class Koperasi extends CI_Controller {
     public function index()
     {
         $data['title'] = 'Koperasi';
-        $data['siswa'] = $this->Koperasi_model->get_data('koperasi')->result();
+        $data['koperasi'] = $this->Koperasi_model->get_data('koperasi')->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);

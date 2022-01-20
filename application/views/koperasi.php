@@ -8,22 +8,27 @@
                 <tr>
                     <th>No</th>
                     <th>Jenis Koperasi</th>
-                    <th>Nama Koperasi(s)</th>
+                    <th>Nama Koperasi</th>
                     <th>Desa</th>
                     <th>Kecamatan</th>
+                    <th>Action</th>
                 </tr>
             </thead>
+            <?php $no = 1;
+            foreach($koperasi as $ssw) : ?>
             <tbody>
                 <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                        Explorer 4.0
+                    <td><?= $no++ ?></td>
+                    <td><?= $ssw->jenis_koperasi ?></td>
+                    <td><?= $ssw->nama_koperasi ?></td>
+                    <td><?= $ssw->desa ?></td>
+                    <td>
+                        <a href="" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                        <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
                     </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td>X</td>
                 </tr>
             </tbody>
+            <?php endforeach ?>
         </table>
     </div>
 </div>
