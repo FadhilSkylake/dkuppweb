@@ -6,11 +6,11 @@
         <table id="example1" class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
+                    <th>No</th>
+                    <th>Jenis Koperasi</th>
+                    <th>Nama Koperasi(s)</th>
+                    <th>Desa</th>
+                    <th>Kecamatan</th>
                 </tr>
             </thead>
             <tbody>
