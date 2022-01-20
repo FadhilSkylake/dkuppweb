@@ -5,7 +5,7 @@ class Perdagangan_model extends CI_Model
 {
     public function select()
     {
-
+        return $this->db->get($table);
     }                        
                         
 }

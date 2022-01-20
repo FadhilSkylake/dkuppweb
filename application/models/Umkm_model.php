@@ -1,7 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
                         
-class Industri_model extends CI_Model 
+class Umkm_model extends CI_Model 
 {
     public function get_data($table)
     {
@@ -11,4 +11,4 @@ class Industri_model extends CI_Model
 }
 
 
-/* End of file Industri_model.php and path \application\models\Industri_model.php */
+/* End of file Umkm_model.php and path \application\models\Umkm_model.php */
