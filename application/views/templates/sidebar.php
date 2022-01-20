@@ -54,11 +54,34 @@
                   <p>Koperasi</p>
                 </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item has-treeview menu-close">
                 <a href="<?= base_url('perdagangan')?>" class="nav-link">
                 <i class="fas fa-chart-line nav-icon"></i>
                   <p>Perdagangan</p>
                 </a>
+          </li> -->
+          <li class="nav-item has-treeview menu-close">
+          <a href="" class="nav-link">
+            <i class="fas fa-chart-line nav-icon"></i>
+              <p>
+                Perdagangan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?= base_url('perdagangan')?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Penting</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pokok</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
                 <a href="<?= base_url('industri')?>" class="nav-link">
