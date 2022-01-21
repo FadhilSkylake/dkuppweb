@@ -1,4 +1,4 @@
-<?= $this->session->flashdata('pesan'); ?>
+
 
 <div class="card">
     <div class="card-header">
