@@ -61,18 +61,10 @@ class Pokok extends CI_Controller {
 
     public function _rules()
     {
-        $this->form_validation->set_rules('jenis_koperasi', 'Jenis Koperasi', 'required', array(
+        $this->form_validation->set_rules('nama_bahan_pokok', 'Nama Bahan Pokok', 'required', array(
             'required' => '%s harus diisi'
         ));
-        $this->form_validation->set_rules('nama_koperasi', 'Nama Koperasi', 'required', array(
-            'required' => '%s harus diisi'
-        ));
-        $this->form_validation->set_rules('desa', 'Desa', 'required', array(
-            'required' => '%s harus diisi'
-        ));
-        $this->form_validation->set_rules('kecamatan', 'Kecamatan', 'required', array(
-            'required' => '%s harus diisi'
-        ));
+        
     }
 }
 
