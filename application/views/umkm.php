@@ -16,6 +16,7 @@
                     <th>Kecamatan</th>
                     <th>Jenis Usaha</th>
                     <th>Tahun Berdiri</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <?php $id_profil = 1;
