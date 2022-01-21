@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-      <h3 class="card-title">DataTable with default features</h3>
+    <a href="<?= base_url('pokok/tambah') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus-square"></i> Tambah Bahan Pokok</a>
     </div>
     <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">
