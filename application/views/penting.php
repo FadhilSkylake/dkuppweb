@@ -7,21 +7,21 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Nama Pasar</th>
-                    <th>Jenis Pasar</th>
-                    <th>Alamat</th>
+                    <th>Komoditi</th>
+                    <th>Satuan</th>
+                    <th>Harga</th>
                     <th>Ket</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <?php $no = 1;
-            foreach($pasar as $ssw) : ?>
+            foreach($penting as $ssw) : ?>
             <tbody>
                 <tr>
                     <td><?= $no++ ?></td>
-                    <td><?= $ssw->nama_pasar ?></td>
-                    <td><?= $ssw->jenis_pasar ?></td>
-                    <td><?= $ssw->alamat ?></td>
+                    <td><?= $ssw->komoditi ?></td>
+                    <td><?= $ssw->satuan ?></td>
+                    <td><?= $ssw->harga ?></td>
                     <td><?= $ssw->ket ?></td>
                     <td>
                         <a href="" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
