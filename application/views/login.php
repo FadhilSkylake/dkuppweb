@@ -1,7 +1,7 @@
 <body class="hold-transition login-page text-center">
     <div class="login-box">
         <div class="login-logo">
-            <img src="<?= base_url('assets/template/') ?>/img/logo.png" class="mx-auto d-block" style="max-width:100px; margin-top: -7px;">
+            <img src="<?= base_url('assets/') ?>/img/logo.png" class="mx-auto d-block" style="max-width:100px; margin-top: -7px;">
             <a><b>DKUPP SUBANG</b></a>
             <h5>Dinas Koperasi UMKM Perdagangan Perindustrian & Pasar</h5>
         </div>
