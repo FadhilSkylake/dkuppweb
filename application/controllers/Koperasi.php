@@ -10,6 +10,11 @@ class Koperasi extends CI_Controller
         parent::__construct();
         $this->load->model('Koperasi_model');
         $this->load->library('pagination');
+
+        if ($this->session->userdata('level') == null) {
+
+            redirect('login', 'refresh');
+        }
     }
 
     public function index()
@@ -63,7 +68,7 @@ class Koperasi extends CI_Controller
     {
         $this->_rules();
 
-        
+
         if ($this->form_validation->run() == FALSE) {
             $this->index();
         } else {
