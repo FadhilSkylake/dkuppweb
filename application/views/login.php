@@ -7,19 +7,20 @@
         </div>
         <!-- /.login-logo -->
         <div class="card">
-            <div class="card-body login-card-body">
+            <div class="card-body login-card-body card-outline card-success bg-gradient-success">
                 <p class="login-box-msg">LOGIN</p>
-                <form action="../../index3.html" method="post">
+                <form action="<?= base_url() ?>login/proses_login" method="POST">
+                    <?php echo $this->session->flashdata('msg'); ?>
                     <div class="input-group mb-3">
-                        <input type="username" class="form-control" placeholder="Username">
+                        <input type="text" id="username" class="form-control" placeholder="Username" required="required" autofocus="autofocus" name="username">
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
+                                <span class="fas fa-user"></span>
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" id="password" class="form-control" placeholder="Password" required="required" name="password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -29,7 +30,7 @@
                     <div class="row d-flex justify-content-center">
                         <!-- /.col -->
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
                         </div>
                         <!-- /.col -->
                     </div>
