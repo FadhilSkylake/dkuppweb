@@ -18,6 +18,8 @@
     </nav>
     <!-- /.navbar -->
 
+
+
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
@@ -34,77 +36,162 @@
             <img src="<?= base_url('assets/template/') ?>/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">YOGI SI ANAK TOLIL</a>
+            <a class="d-block"><?php echo $this->session->userdata('akun'); ?></a>
             <a href="<?php echo base_url() ?>login/logout">Logout</a>
           </div>
         </div>
+        <?php if ($this->session->userdata('level') == "1") { ?>
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item">
+                <a href="<?= base_url('dashboard') ?>" class="nav-link">
+                  <i class="fas fa-tachometer-alt nav-icon"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('koperasi') ?>" class="nav-link">
+                  <i class="fas fa-balance-scale nav-icon"></i>
+                  <p>Koperasi</p>
+                </a>
+              </li>
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-item">
-              <a href="<?= base_url('dashboard') ?>" class="nav-link">
-                <i class="fas fa-tachometer-alt nav-icon"></i>
-                <p>Dashboard</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url('koperasi') ?>" class="nav-link">
-                <i class="fas fa-balance-scale nav-icon"></i>
-                <p>Koperasi</p>
-              </a>
-            </li>
+              <li class="nav-item has-treeview menu-close">
+                <a href="" class="nav-link">
+                  <i class="fas fa-chart-line nav-icon"></i>
+                  <p>
+                    Perdagangan
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="<?= base_url('penting') ?>" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Penting</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="<?= base_url('pokok') ?>" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Pokok</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('industri') ?>" class="nav-link">
+                  <i class="fas fa-industry nav-icon"></i>
+                  <p>Industri</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('umkm') ?>" class="nav-link">
+                  <i class="fas fa-cookie-bite nav-icon"></i>
+                  <p>UMKM</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('pasar') ?>" class="nav-link">
+                  <i class="fas fa-shopping-bag nav-icon"></i>
+                  <p>Pasar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('sekretariat') ?>" class="nav-link">
+                  <i class="fas fa-users nav-icon"></i>
+                  <p>Sekretariat</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        <?php } else if ($this->session->userdata('level') == "2") { ?>
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
-            <li class="nav-item has-treeview menu-close">
-              <a href="" class="nav-link">
-                <i class="fas fa-chart-line nav-icon"></i>
-                <p>
-                  Perdagangan
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="<?= base_url('penting') ?>" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Penting</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="<?= base_url('pokok') ?>" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Pokok</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url('industri') ?>" class="nav-link">
-                <i class="fas fa-industry nav-icon"></i>
-                <p>Industri</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url('umkm') ?>" class="nav-link">
-                <i class="fas fa-cookie-bite nav-icon"></i>
-                <p>UMKM</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url('pasar') ?>" class="nav-link">
-                <i class="fas fa-shopping-bag nav-icon"></i>
-                <p>Pasar</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url('sekretariat') ?>" class="nav-link">
-                <i class="fas fa-users nav-icon"></i>
-                <p>Sekretariat</p>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- /.sidebar-menu -->
+              <li class="nav-item">
+                <a href="<?= base_url('koperasi') ?>" class="nav-link">
+                  <i class="fas fa-balance-scale nav-icon"></i>
+                  <p>Koperasi</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        <?php } else if ($this->session->userdata('level') == "3") { ?>
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item has-treeview menu-close">
+                <a href="" class="nav-link">
+                  <i class="fas fa-chart-line nav-icon"></i>
+                  <p>
+                    Perdagangan
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="<?= base_url('penting') ?>" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Penting</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="<?= base_url('pokok') ?>" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Pokok</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        <?php } else if ($this->session->userdata('level') == "4") { ?>
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item">
+                <a href="<?= base_url('industri') ?>" class="nav-link">
+                  <i class="fas fa-industry nav-icon"></i>
+                  <p>Industri</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        <?php } else if ($this->session->userdata('level') == "5") { ?>
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item">
+                <a href="<?= base_url('umkm') ?>" class="nav-link">
+                  <i class="fas fa-cookie-bite nav-icon"></i>
+                  <p>UMKM</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        <?php } else if ($this->session->userdata('level') == "6") { ?>
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item">
+                <a href="<?= base_url('pasar') ?>" class="nav-link">
+                  <i class="fas fa-shopping-bag nav-icon"></i>
+                  <p>Pasar</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        <?php } ?>
+
       </div>
       <!-- /.sidebar -->
     </aside>
