@@ -36,7 +36,7 @@
             <img src="<?= base_url('assets/template/') ?>/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">YOGI SI ANAK TOLIL</a>
+            <a class="d-block"><?php echo $this->session->userdata('akun'); ?></a>
             <a href="<?php echo base_url() ?>login/logout">Logout</a>
           </div>
         </div>
