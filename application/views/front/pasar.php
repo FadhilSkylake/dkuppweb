@@ -13,10 +13,6 @@
     <title>DKUPP KAB. SUBANG</title>
   </head>
 
-  <?php 
-    include "front/navbar.php";
-  ?>
-
   <body>
     <!-- akhir about -->
     <section id="about">
