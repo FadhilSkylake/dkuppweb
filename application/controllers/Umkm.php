@@ -1,13 +1,18 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
-        
-class Umkm extends CI_Controller {
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Umkm extends CI_Controller
+{
 
     public function __construct()
     {
         parent::__construct();
         $this->load->model('Umkm_model');
 
+        if ($this->session->userdata('level') == null) {
+
+            redirect('login', 'refresh');
+        }
     }
 
     public function index()

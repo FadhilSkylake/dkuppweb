@@ -1,15 +1,20 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
-        
-class Penting extends CI_Controller {
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Penting extends CI_Controller
+{
 
     public function __construct()
     {
         parent::__construct();
         $this->load->model('Penting_model');
 
+        if ($this->session->userdata('level') == null) {
+
+            redirect('login', 'refresh');
+        }
     }
-    
+
     public function index()
     {
         $data['title'] = 'Perdagangan Penting';
@@ -68,7 +73,7 @@ class Penting extends CI_Controller {
         $this->form_validation->set_rules('harga', 'Harga', 'required', array(
             'required' => '%s harus diisi'
         ));
-    }    
+    }
 }
 
 /* End of file Perdagangan.php and path \application\controllers\Perdagangan.php */

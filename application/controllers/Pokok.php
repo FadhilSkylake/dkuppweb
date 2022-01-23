@@ -1,15 +1,20 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
-        
-class Pokok extends CI_Controller {
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Pokok extends CI_Controller
+{
 
     public function __construct()
     {
         parent::__construct();
         $this->load->model('Pokok_model');
 
+        if ($this->session->userdata('level') == null) {
+
+            redirect('login', 'refresh');
+        }
     }
-    
+
     public function index()
     {
         $data['title'] = 'Perdagangan Pokok';
@@ -64,7 +69,6 @@ class Pokok extends CI_Controller {
         $this->form_validation->set_rules('nama_bahan_pokok', 'Nama Bahan Pokok', 'required', array(
             'required' => '%s harus diisi'
         ));
-        
     }
 }
 

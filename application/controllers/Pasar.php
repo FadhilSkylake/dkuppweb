@@ -1,13 +1,18 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
-        
-class Pasar extends CI_Controller {
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Pasar extends CI_Controller
+{
 
     public function __construct()
     {
         parent::__construct();
         $this->load->model('Pasar_model');
 
+        if ($this->session->userdata('level') == null) {
+
+            redirect('login', 'refresh');
+        }
     }
 
     public function index()
@@ -34,11 +39,10 @@ class Pasar extends CI_Controller {
     public function tambah_aksi()
     {
         $this->_rules();
-        
+
         if ($this->form_validation->run() == FALSE) {
             $this->tambah();
-        }
-        else {
+        } else {
             $data = array(
                 'nama_pasar' => $this->input->post('nama_pasar'),
                 'jenis_pasar' => $this->input->post('jenis_pasar'),
@@ -67,12 +71,12 @@ class Pasar extends CI_Controller {
         } else {
             $data = array(
                 'no' => $no,
-                    'nama_pasar' => $this->input->post('nama_pasar'),
-                    'jenis_pasar' => $this->input->post('jenis_pasar'),
-                    'alamat' => $this->input->post('alamat'),
-                    'ket' => $this->input->post('ket'),
+                'nama_pasar' => $this->input->post('nama_pasar'),
+                'jenis_pasar' => $this->input->post('jenis_pasar'),
+                'alamat' => $this->input->post('alamat'),
+                'ket' => $this->input->post('ket'),
             );
-        $this->Pasar_model->update_data($data, 'pasar');
+            $this->Pasar_model->update_data($data, 'pasar');
             $this->session->set_flashdata(
                 'pesan',
                 '<div class="alert alert-success alert-dismissible fade show" role="alert"> Data Berhasil Edit <button type="button" class="close" data-dismiss="alert" aria-label="Close">
