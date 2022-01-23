@@ -59,6 +59,34 @@ class Koperasi extends CI_Controller
         }
     }
 
+    public function edit($no)
+    {
+        $this->_rules();
+
+        
+        if ($this->form_validation->run() == FALSE) {
+            $this->index();
+        } else {
+            $data = array(
+                'no' => $no,
+                'jenis_koperasi' => $this->input->post('jenis_koperasi'),
+                'nama_koperasi' => $this->input->post('nama_koperasi'),
+                'desa' => $this->input->post('desa'),
+                'kecamatan' => $this->input->post('kecamatan'),
+            );
+
+            $this->Koperasi_model->update_data($data, 'koperasi');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-success alert-dismissible fade show" role="alert"> Data Berhasil Edit <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('koperasi');
+        }
+    }
+
     public function _rules()
     {
         $this->form_validation->set_rules('jenis_koperasi', 'Jenis Koperasi', 'required', array(
