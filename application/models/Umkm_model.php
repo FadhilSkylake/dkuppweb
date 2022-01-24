@@ -10,7 +10,19 @@ class Umkm_model extends CI_Model
     public function insert_data($data, $table)
     {
         $this->db->insert($table, $data);
-    }                        
+    }     
+    
+    public function update_data($data, $table)
+    {
+        $this->db->where('id_profil', $data['id_profil']);
+        $this->db->update($table, $data);
+    }
+
+    public function delete($where, $table)
+    {
+        $this->db->where($where);
+        $this->db->delete($table);
+    }
                         
 }
 
