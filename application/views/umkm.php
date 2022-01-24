@@ -19,9 +19,9 @@
                     <th>Action</th>
                 </tr>
             </thead>
-            <?php $id_profil = 1;
-            foreach ($umkm as $ssw) : ?>
                 <tbody>
+                <?php $id_profil = 1;
+            foreach ($umkm as $ssw) : ?>
                     <tr>
                         <td><?= $id_profil++ ?></td>
                         <td><?= $ssw->nama_pemilik ?></td>

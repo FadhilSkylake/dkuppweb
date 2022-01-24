@@ -62,6 +62,32 @@ class Industri extends CI_Controller
         }
     }
 
+    public function edit($id_perusahaan)
+    {
+        $this->_rules();
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->index();
+        } else {
+            $data = array(
+                'id_perusahaan' => $id_perusahaan,
+                'nama_perusahaan' => $this->input->post('nama_perusahaan'),
+                'alamat_perusahaan' => $this->input->post('alamat_perusahaan'),
+                'ket' => $this->input->post('ket'),
+            );
+
+            $this->Industri_model->update_data($data, 'industri');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-success alert-dismissible fade show" role="alert"> Data Berhasil Edit <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('industri');
+        }
+    }
+
     public function _rules()
     {
         $this->form_validation->set_rules('nama_perusahaan', 'Nama Perusahaan', 'required', array(
@@ -71,6 +97,20 @@ class Industri extends CI_Controller
             'required' => '%s harus diisi'
         ));
     }
+
+    public function delete($id_perusahaan)
+    {
+        $where = array('id_perusahaan' => $id_perusahaan);
+        $this->Industri_model->delete($where, 'industri');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('industri');
+}
 }
 
 /* End of file Industri.php and path \application\controllers\Industri.php */
