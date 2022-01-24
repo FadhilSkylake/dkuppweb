@@ -13,8 +13,9 @@ class Koperasiv extends CI_Controller
         $data['title'] = 'Koperasi';
 
         $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/header');
         $this->load->view('front/koperasi');
-        $this->load->view('layout/footer');
+        $this->load->view('layout/footer'); 
     }
 }
 

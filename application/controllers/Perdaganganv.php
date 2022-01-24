@@ -13,8 +13,9 @@ class Perdaganganv extends CI_Controller
         $data['title'] = 'Perdagangan';
 
         $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/header');
         $this->load->view('front/perdagangan');
-        $this->load->view('layout/footer');
+        $this->load->view('layout/footer'); 
     }
 }
 

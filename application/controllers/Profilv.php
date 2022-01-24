@@ -12,6 +12,7 @@ class Profilv extends CI_Controller {
         $data['title'] = 'Profil';
 
         $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/header');
         $this->load->view('front/profil');
         $this->load->view('layout/footer'); 
     }

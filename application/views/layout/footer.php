@@ -1,23 +1,25 @@
 <footer class="bg-success text-white text-left pb-3">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col"><br>
         <h4>DKUPP KAB.SUBANG</h4><br>
           <p>Jl. KS. Tubun <br>
           Cigadung, Kec. Subang <br>
           Kab. Subang, Jawa Barat <br>
-          Kode Pos : 41211 <br>
-          Telp : 022-1891819
-          </p>
+          Kode Pos : 41211
+          </p><br>
+          <p>Telp : 022 909109</p>
       </div>
-      <div class="col">
+      <div class="col"><br>
         <h4>Contact Us</h4>
-        <span class="fab fa-instagram"></span>
-        <span class="fas fa-envelope"></span>
-
-
+        <span class="fa-3x">
+            <i class="fab fa-instagram"></i>
+        </span>
+        <span class="fa-3x">
+            <i class="far fa-envelope"></i>
+        </span>
       </div>
-      <div class="col justify-content-center fs-5 text-justify">
+      <div class="col justify-content-center fs-5 text-justify"><br>
       <h3 class="text-center">Kritik dan Saran</h3>
       <div class="row justify-content-center">
             <div class="col-md-10">

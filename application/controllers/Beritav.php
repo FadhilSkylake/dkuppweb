@@ -12,6 +12,7 @@ class Beritav extends CI_Controller {
         $data['title'] = 'Berita';
 
         $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/header');
         $this->load->view('front/berita');
         $this->load->view('layout/footer'); 
     }

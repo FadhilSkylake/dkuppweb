@@ -12,8 +12,9 @@ class Perindustrianv extends CI_Controller {
         $data['title'] = 'Perindustrian';
 
         $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/header');
         $this->load->view('front/perindustrian');
-        $this->load->view('layout/footer');
+        $this->load->view('layout/footer'); 
     }
 }
 
