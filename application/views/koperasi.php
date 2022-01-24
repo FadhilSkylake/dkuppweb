@@ -25,7 +25,7 @@
                         <td><?= $ssw->kecamatan ?></td>
                         <td>
                             <button data-toggle="modal" data-target="#edit<?= $ssw->no ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></button>
-                            <a href="<?= base_url('Koperasi/delete/' . $ssw->no)?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda Yaking Ingin Menghapus Data Ini?')"><i class="fas fa-trash"></i></a>
+                            <a href="<?= base_url('Koperasi/delete/' . $ssw->no)?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                 <?php endforeach ?>

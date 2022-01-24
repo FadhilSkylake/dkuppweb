@@ -62,6 +62,34 @@ class Penting extends CI_Controller
         }
     }
 
+    public function edit($no)
+    {
+        $this->_rules();
+
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->index();
+        } else {
+            $data = array(
+                'no' => $no,
+                'komoditi' => $this->input->post('komoditi'),
+                'satuan' => $this->input->post('satuan'),
+                'harga' => $this->input->post('harga'),
+                'ket' => $this->input->post('ket'),
+            );
+
+            $this->Penting_model->update_data($data, 'perdagangan_penting');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-success alert-dismissible fade show" role="alert"> Data Berhasil Edit <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('penting');
+        }
+    }
+
     public function _rules()
     {
         $this->form_validation->set_rules('komoditi', 'Komoditi', 'required', array(
@@ -73,6 +101,20 @@ class Penting extends CI_Controller
         $this->form_validation->set_rules('harga', 'Harga', 'required', array(
             'required' => '%s harus diisi'
         ));
+    }
+
+    public function delete($no)
+    {
+        $where = array('no' => $no);
+        $this->Pasar_model->delete($where, 'perdagangan_penting');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('penting');
     }
 }
 

@@ -103,6 +103,20 @@ class Pasar extends CI_Controller
             'required' => '%s harus diisi'
         ));
     }
+
+    public function delete($no)
+    {
+        $where = array('no' => $no);
+        $this->Pasar_model->delete($where, 'pasar');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('pasar');
+    }
 }
 
 /* End of file Pasar.php and path \application\controllers\Pasar.php */
