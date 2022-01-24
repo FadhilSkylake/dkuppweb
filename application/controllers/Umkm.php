@@ -1,13 +1,18 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
-        
-class Umkm extends CI_Controller {
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Umkm extends CI_Controller
+{
 
     public function __construct()
     {
         parent::__construct();
         $this->load->model('Umkm_model');
 
+        if ($this->session->userdata('level') == null) {
+
+            redirect('login', 'refresh');
+        }
     }
 
     public function index()
@@ -62,6 +67,38 @@ class Umkm extends CI_Controller {
         }
     }
 
+    public function edit($id_profil)
+    {
+        $this->_rules();
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->index();
+        } else {
+            $data = array(
+                'id_profil' => $id_profil,
+                'nama_pemilik' => $this->input->post('nama_pemilik'),
+                'nama_umkm' => $this->input->post('nama_umkm'),
+                'kampung' => $this->input->post('kampung'),
+                'rt' => $this->input->post('rt'),
+                'rw' => $this->input->post('rw'),
+                'desa' => $this->input->post('desa'),
+                'kecamatan' => $this->input->post('kecamatan'),
+                'jenis_usaha' => $this->input->post('jenis_usaha'),
+                'tahun_berdiri' => $this->input->post('tahun_berdiri'),
+            );
+
+            $this->Umkm_model->update_data($data, 'umkm');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-success alert-dismissible fade show" role="alert"> Data Berhasil Edit <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('umkm');
+        }
+    }
+
     public function _rules()
     {
         $this->form_validation->set_rules('nama_pemilik', 'Nama Pemilik', 'required', array(
@@ -73,6 +110,20 @@ class Umkm extends CI_Controller {
         $this->form_validation->set_rules('jenis_usaha', 'Jenis Usaha', 'required', array(
             'required' => '%s harus diisi'
         ));
+    }
+
+    public function delete($id_profil)
+    {
+        $where = array('id_profil' => $id_profil);
+        $this->Umkm_model->delete($where, 'umkm');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('umkm');
     }
 }
 

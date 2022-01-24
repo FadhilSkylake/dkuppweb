@@ -12,6 +12,12 @@ class Pasar_model extends CI_Model
     {
         $this->db->insert($table, $data);
     }
+
+    public function update_data($data, $table)
+    {
+        $this->db->where('no',$data['no']);
+        $this->db->update($table, $data);
+    }
                         
 }
 
