@@ -17,8 +17,7 @@ class Koperasi_model extends CI_Model
     {
         $this->db->where('no', $data['no']);
         $this->db->update($table, $data);
-        
-        
+   
     }
 
     public function delete($where, $table)
