@@ -13,14 +13,14 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
   <div class="container">
     </a>
-    <a class="navbar-brand" href="Home">DKUPP KAB.SUBANG</a>
+    <a class="navbar-brand" href="Home">DKUPP KAB.SUBANG | <?= $title ?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Home">Home</a>
+          <a class="nav-link" aria-current="page" href="Home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Profilv">Profil</a>
@@ -29,7 +29,7 @@
           <a class="nav-link" href="Beritav">Berita</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bidang</a>
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bidang</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="Koperasiv">Koperasi</a></li>
             <li><a class="dropdown-item" href="Umkmv">UMKM</a></li>

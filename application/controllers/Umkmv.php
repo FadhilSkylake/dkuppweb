@@ -13,8 +13,9 @@ class Umkmv extends CI_Controller
         $data['title'] = 'UMKM';
 
         $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/header');
         $this->load->view('front/umkm');
-        $this->load->view('layout/footer');
+        $this->load->view('layout/footer'); 
     }
 }
 
