@@ -95,12 +95,12 @@
                   <p>Pasar</p>
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="<?= base_url('sekretariat') ?>" class="nav-link">
                   <i class="fas fa-users nav-icon"></i>
                   <p>Sekretariat</p>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a href="<?= base_url('artikel') ?>" class="nav-link">
                   <i class="fas fa-users nav-icon"></i>

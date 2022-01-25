@@ -24,7 +24,8 @@
         <!-- small box -->
         <div class="small-box bg-info">
           <div class="inner">
-            <h3>123<sup style="font-size: 20px"></sup></h3>
+            <h3>1233</h3>
+            <!-- <h3><?php echo $total_perdagangan ?></sup></h3> -->
 
             <p>Perdagangan</p>
           </div>
@@ -38,7 +39,7 @@
         <!-- small box -->
         <div class="small-box bg-success">
           <div class="inner">
-            <h3>53<sup style="font-size: 20px">%</sup></h3>
+            <h3><?php echo $total_industri ?></sup></h3>
 
             <p>Industri</p>
           </div>
@@ -53,7 +54,7 @@
         <!-- small box -->
         <div class="small-box bg-success">
           <div class="inner">
-            <h3>19000</h3>
+            <h3><?php echo $total_umkm ?></h3>
 
             <p>UMKM</p>
           </div>
@@ -84,7 +85,7 @@
           <div class="inner">
             <h3>65</h3>
 
-            <p>Sekretariat</p>
+            <p>Bahan Pokok</p>
           </div>
           <div class="icon">
             <i class="fas fa-users"></i>

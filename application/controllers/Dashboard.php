@@ -13,6 +13,9 @@ class Dashboard extends CI_Controller
     {
         $this->data['total_koperasi'] =  $this->Dashboard_model->total_koperasi();
         $this->data['total_pasar'] =  $this->Dashboard_model->total_pasar();
+        $this->data['total_perdagangan'] =  $this->Dashboard_model->total_perdagangan();
+        $this->data['total_industri'] =  $this->Dashboard_model->total_industri();
+        $this->data['total_umkm'] =  $this->Dashboard_model->total_umkm();
         $data['title'] = 'Dashboard';
         if ($this->session->userdata('level') == null) {
 

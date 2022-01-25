@@ -12,6 +12,18 @@ class Dashboard_model extends CI_Model
     {
         return $this->db->get('pasar')->num_rows();
     }
+    function total_perdagangan()
+    {
+        return $this->db->get('perdagangan_penting')->num_rows();
+    }
+    function total_industri()
+    {
+        return $this->db->get('industri')->num_rows();
+    }
+    function total_umkm()
+    {
+        return $this->db->get('umkm')->num_rows();
+    }
 }
 
 
