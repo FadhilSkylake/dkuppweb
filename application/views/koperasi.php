@@ -1,6 +1,9 @@
 <div class="card">
     <div class="card-header">
         <a href="<?= base_url('koperasi/tambah') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus-square"></i> Tambah Koperasi</a>
+        <a href="<?= base_url('koperasi/print') ?>" class="btn btn-danger btn-sm"><i class="fas fa-print"></i> Print</a>
+        <!-- <a href="<?= base_url('koperasi/pdf') ?>" class="btn btn-success btn-sm"><i class="fas fa-file"></i> export pdf</a> -->
+
     </div>
     <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">

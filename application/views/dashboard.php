@@ -7,6 +7,8 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
+
+             
                 <h3>426</h3>
                 <p>Koperasi</p>
               </div>

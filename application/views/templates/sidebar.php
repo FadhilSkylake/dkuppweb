@@ -101,6 +101,12 @@
                   <p>Sekretariat</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="<?= base_url('artikel') ?>" class="nav-link">
+                  <i class="fas fa-users nav-icon"></i>
+                  <p>Artikel</p>
+                </a>
+              </li>
             </ul>
           </nav>
           <!-- /.sidebar-menu -->

@@ -92,6 +92,24 @@ class Koperasi extends CI_Controller
         }
     }
 
+    // public function pdf()
+    // {
+    //     $this->load->library('dompdf_gen');
+
+    //     $data['koperasi'] = $this->Koperasi_model->get_data('koperasi')->result();
+    //     $this->load->view('laporan_koperasi', $data);
+
+    //     $paper_size = 'F4';
+    //     $orientation = 'potrait';
+    //     $html = $this->output->get_output();
+    //     $this->dompdf->set_paper($paper_size, $orientation);
+
+    //     $this->dompdf->load_html($html);
+    //     $this->dompdf->render();
+    //     $this->dompdf->stream('laporan_koperasi.pdf'. array('Attachment'=> 0));
+        
+    // }
+
     public function _rules()
     {
         $this->form_validation->set_rules('jenis_koperasi', 'Jenis Koperasi', 'required', array(
