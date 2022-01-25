@@ -1,232 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<header id="header" class="header">
+  <div class="header-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="h1-large">SELAMAT DATANG DI WEBSITE DKUPP KAB.SUBANG</h1>
+          <a class="btn-solid-lg" href="#introduction">Website Resmi dari Dinas Koperasi UMKM Perdagangan dan Perindustrian Kab.Subang</a>
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of header-content -->
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Video Background -->
+  <video autoplay loop muted id="video-background" poster="assets/img/header-background.jpg" playsinline>
+    <source src="assets/img/home.mp4" type="video/mp4" />
+  </video>
+  <!-- end of video background -->
 
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>DKUPP KAB. SUBANG</title>
-  </head>
+</header> <!-- end of header -->
+<!-- end of header -->
 
-  <body>
 
-    <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/jawara.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>SELAMAT DATANG DI WEBSITE DKUPP KAB.SUBANG</h5>
-            <p>Website Resmi dari Dinas Koperasi UMKM Perdagangan dan Perindustrian Kab.Subang</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/jawara.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/jawara.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
+<!-- Introduction -->
+<div id="introduction" class="cards-1">
+  <br>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="container">
+        <div class="row">
+          <h2 class="h2-sejarah">SEJARAH DKUPP KAB.SUBANG</h2>
+          <p>
+            <li> Undang-Undang Nomor 14 Tahun 1950 tentang Pembentukan Daerah-Daerah Kabupaten Dalam Lingkungan Propinsi Djawa Barat, sebagaimana telah diubah dengan Undang-Undang Nomor 4 Tahun 1968, tentang Pembentukan Kabupaten Purwakarta dan Kabupaten Subang, dengan Mengubah Undang-Undang Nomor 14 Tahun 1950 tentang Pembentukan Daerah-Daerah Kabupaten Dalam Lingkungan Propinsi Djawa Barat;</li>
+            <li> Undang-Undang Nomor 5 Tahun 2014 tentang Aparatur Sipil Negara;</li>
+            <li> Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan Daerah;</li>
+            <li> Peraturan Pemerintah Nomor 18 Tahun 2016 tentang Perangkat Daerah;</li>
+            <li> Peraturan Daerah Kabupaten Subang Nomor 7Tahun 2016, tentang Pembentukan dan Susunan Perangkat Daerah Kabupaten Subang;</li>
+            <li> Peraturan BupatiSubang Nomor 32 Tahun 2016, tentang Susunan Organisasi Perangkat Daerah Dinas;</li>
+          </p>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <!-- Akhir Carousel -->
-<br>
-    <!-- data mentah -->
-    <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">DATA BIDANG</h2>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-success"></i>
-                            <i class="fas fa-balance-scale fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">KOPERASI</h4>
-                        <p class="text-muted">Jumlah Koperasi Aktif Yang Terdaftar di Dinas Sebanyak 426 Koperasi</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-success"></i>
-                            <i class="fas fa-cookie-bite fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">UMKM</h4>
-                        <p class="text-muted">Jumlah UMKM yang Terdaftar di Dinas Sebanyak 30.017 UMKM</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-success"></i>
-                            <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">PERDAGANGAN</h4>
-                        <p class="text-muted">Data Barang Terdapat di Dinas Adalah Data Barang Pokok dan Data Barang Penting</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-success"></i>
-                            <i class="fas fa-industry fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">PERINDUSTRIAN</h4>
-                        <p class="text-muted">Jumlah Perindustrian yang Terdaftar di Dinas Sebanyak 91 Industri Dari Berbagai Sektor</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-success"></i>
-                            <i class="fas fa-store fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">PASAR</h4>
-                        <p class="text-muted">Jumlah Pasar yang Terdaftar di Dinas Sebanyak 30 Pasar</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- akhir data mentah -->
+  </div>
+</div>
 
-    <hr color="green"> 
-    <hr color="green"> 
-    <hr color="green"> 
-    
-    <!-- akhir about -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>SEJARAH DKUPP KAB.SUBANG</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col justify-content-center fs-5 text-justify">
-            <ul class="text-justify">
-                <ul>
-                  <li> Undang-Undang Nomor 14 Tahun 1950 tentang Pembentukan Daerah-Daerah Kabupaten Dalam Lingkungan Propinsi Djawa Barat, sebagaimana telah diubah dengan Undang-Undang Nomor 4 Tahun 1968, tentang Pembentukan Kabupaten Purwakarta dan Kabupaten Subang, dengan Mengubah Undang-Undang Nomor 14 Tahun 1950 tentang Pembentukan Daerah-Daerah Kabupaten Dalam Lingkungan Propinsi Djawa Barat;</li>
-                  <li> Undang-Undang Nomor 5 Tahun 2014 tentang Aparatur Sipil Negara;</li>
-                  <li> Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan Daerah;</li>
-                  <li> Peraturan Pemerintah Nomor 18 Tahun 2016 tentang Perangkat Daerah;</li>
-                  <li> Peraturan Daerah Kabupaten Subang Nomor 7Tahun 2016, tentang Pembentukan dan Susunan Perangkat Daerah Kabupaten Subang;</li>
-                  <li> Peraturan BupatiSubang Nomor 32 Tahun 2016, tentang Susunan Organisasi Perangkat Daerah Dinas;</li>
-                </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- akhir about akhir -->
 
-    <!-- projet -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Headline</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/bg.jpg" class="card-img-top" alt="project1" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/bg.jpg" class="card-img-top" alt="project2" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/bg.jpg" class="card-img-top" alt="project3" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/bg.jpg" class="card-img-top" alt="project3" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/bg.jpg" class="card-img-top" alt="project3" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/bg.jpg" class="card-img-top" alt="project3" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- akhir projet -->
+<!-- Projects -->
+<div id="projects" class="filter bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="h2-heading">Berita</h2>
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    <div class="row">
+      <div class="col-lg-12">
 
-    <!-- akhir about -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>PERANAN DKUPP KAB.SUBANG</h2>
+        <div class="grid">
+          <div class="element-item finance">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-1.jpg" alt="alternative">
+              <p><strong>Online banking</strong> - delivered to and to major company in pharmace ski jump from</p>
+            </a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col justify-content-center fs-5 text-center">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero porro nam illo necessitatibus vitae beatae, possimus dolore deleniti aliquid doloribus incidunt quae illum soluta nesciunt facere rem explicabo provident eveniet.
-            </p>
+          <div class="element-item finance">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-2.jpg" alt="alternative">
+              <p><strong>Loans company</strong> - enjoyed minutes related as at on on. Is fanny dried camping today</p>
+            </a>
           </div>
-          <div class="col justify-content-center fs-5 text-center">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facilis distinctio, nobis eveniet consequuntur iure voluptates numquam autem, maxime laudantium voluptate deserunt, molestias ipsum dolor? Dolores voluptatem
-              ducimus vero molestiae?
-            </p>
+          <div class="element-item finance">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-3.jpg" alt="alternative">
+              <p><strong>Refinance firm</strong> - distrusts an it contented perceived attending oh nouns here</p>
+            </a>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- akhir about akhir -->
+          <div class="element-item business finance">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-4.jpg" alt="alternative">
+              <p><strong>Financial products</strong> - thoroughly estimating introduced stimulated why but front</p>
+            </a>
+          </div>
+          <div class="element-item business finance">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-5.jpg" alt="alternative">
+              <p><strong>Credit cards</strong> - enjoyed minutes related as at on on. Is fanny dried out yesterday</p>
+            </a>
+          </div>
+          <div class="element-item business software">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-6.jpg" alt="alternative">
+              <p><strong>Software robots</strong> - as often me goodness as reserved raptures to mistaken</p>
+            </a>
+          </div>
+          <div class="element-item business software">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-7.jpg" alt="alternative">
+              <p><strong>Company control</strong> - steepest oh screened he gravity he mr sixteen esteems his</p>
+            </a>
+          </div>
+          <div class="element-item business software">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-8.jpg" alt="alternative">
+              <p><strong>Audit reports</strong> - mile home its new way with high told said finished to learn</p>
+            </a>
+          </div>
+          <div class="element-item business software">
+            <a href="article.html">
+              <img class="img-fluid" src="assets/img/project-9.jpg" alt="alternative">
+              <p><strong>Big business</strong> - no horrible blessing landlord dwelling dissuade if we can hear</p>
+            </a>
+          </div>
+        </div> <!-- end of grid -->
+        <!-- end of filter -->
 
-   
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</div> <!-- end of filter -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
-</html>
+<!-- Contact -->
+<div id="contact" class="form-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="h2-heading">Hubungi Kami</h2>
+        <p class="p-heading">DKUPP SUBANG</p>
+        <ul class="list-unstyled li-space-lg">
+          <li><i class="fas fa-map-marker-alt"></i> &nbsp;Jln. Aipda Ks. Tubun No. 14 Subang 41211</li>
+          <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:0260411310">(0260) 411310 / Fax. (0260) 411003</a></li>
+        </ul>
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+
+        <!-- Contact Form -->
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control-input" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control-input" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control-textarea" placeholder="Message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="form-control-submit-button">Submit</button>
+          </div>
+        </form>
+        <!-- end of contact form -->
+
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</div>
