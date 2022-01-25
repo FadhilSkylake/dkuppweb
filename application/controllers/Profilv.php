@@ -4,13 +4,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Profilv extends CI_Controller
 {
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
     public function index()
     {
-        $data['title'] = 'Profil';
+        $data['judul'] = 'Profil';
 
         $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);

@@ -38,7 +38,7 @@ class Login extends CI_Controller
                 } elseif ($this->session->userdata('level') == "2") {
                     redirect('Koperasi', 'refresh');
                 } elseif ($this->session->userdata('level') == "3") {
-                    redirect('Perdagangan', 'refresh');
+                    redirect('Penting', 'refresh');
                 } elseif ($this->session->userdata('level') == "4") {
                     redirect('Industri', 'refresh');
                 } elseif ($this->session->userdata('level') == "5") {
@@ -56,7 +56,7 @@ class Login extends CI_Controller
             }
         } else {
         }
-
+        echo "<script>alert('salah');</script>";
         redirect('login', 'refresh');
     }
     function logout()

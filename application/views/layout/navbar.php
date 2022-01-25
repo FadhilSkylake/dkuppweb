@@ -3,7 +3,7 @@
     <div class="container">
 
       <!-- Image Logo -->
-      <a class="navbar-brand logo-image" href="index.html"><img src="assets/img/logo.png" alt="alternative"></a>
+      <a class="navbar-brand logo-image" href="Home"><img src="assets/img/logo.png"> DKUPP SUBANG</a><img src="assets/img/sj.png" width="50" height="50">
 
       <!-- Text Logo - Use this if you don't have a graphic logo -->
       <!-- <a class="navbar-brand logo-text" href="index.html">Desi</a> -->
@@ -15,7 +15,7 @@
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ms-auto navbar-nav-scroll">
           <li class="nav-item">
-            <a class="nav-link">Home</a>
+            <a class="nav-link" href="Home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Profilv">Profil</a>
