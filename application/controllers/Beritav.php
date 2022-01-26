@@ -1,7 +1,8 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
-        
-class Beritav extends CI_Controller {
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Beritav extends CI_Controller
+{
 
     public function __construct()
     {
@@ -9,12 +10,12 @@ class Beritav extends CI_Controller {
     }
     public function index()
     {
-        $data['title'] = 'Berita';
+        $data['judul'] = 'Berita';
 
+        $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);
-        $this->load->view('layout/header');
         $this->load->view('front/berita');
-        $this->load->view('layout/footer'); 
+        $this->load->view('layout/footer');
     }
 }
 

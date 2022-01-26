@@ -4,15 +4,13 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="footer-col first">
-              <h6>About Desi</h6>
-              <p class="p-small">He oppose at thrown desire of no. Announcing impression unaffected day his are unreserved indulgence. Him hard find read are you</p>
+              <h6>Dinas Koperasi UMKM Perindustrian Perdagangan dan Pasar</h6>
+              <p class="p-small">Website resmi.</p>
             </div> <!-- end of footer-col -->
             <div class="footer-col second">
-              <h6>Links</h6>
+              <h6></h6>
               <ul class="list-unstyled li-space-lg p-small">
-                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                <li>Menu: <a href="#header">Home</a>, <a href="#services">Services</a>, <a href="#projects">Projects</a>, <a href="#contact">Contact</a></li>
+                <li></li>
               </ul>
             </div> <!-- end of footer-col -->
             <div class="footer-col third">
@@ -22,7 +20,7 @@
                   <i class="fab fa-instagram fa-stack-1x"></i>
                 </a>
               </span>
-              <p class="p-small">We would love to hear from you <a href=""><strong>contact@site.com</strong></a></p>
+              <p class="p-small">Contact email <a href=""><strong>contact@site.com</strong></a></p>
             </div> <!-- end of footer-col -->
           </div> <!-- end of col -->
         </div> <!-- end of row -->

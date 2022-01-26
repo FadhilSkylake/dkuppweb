@@ -21,7 +21,7 @@
             <a class="nav-link" href="Profilv">Profil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Berita</a>
+            <a class="nav-link" href="Beritav">Berita</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Bidang</a>
