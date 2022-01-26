@@ -11,8 +11,8 @@ class Galeriv extends CI_Controller {
     {
         $data['title'] = 'Galeri';
 
+        $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);
-        $this->load->view('layout/header');
         $this->load->view('front/galeri');
         $this->load->view('layout/footer');            
     }
