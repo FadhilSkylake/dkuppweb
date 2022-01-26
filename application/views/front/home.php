@@ -20,6 +20,48 @@
 <!-- end of header -->
 
 
+ <!-- Statistics -->
+ <div class="counter bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Counter -->
+            <div class="counter-container">
+              <div class="counter-cell">
+                <div data-purecounter-start="0" data-purecounter-end="426" data-purecounter-duration="3" class="purecounter">1</div>
+                <div class="counter-info">Jumlah Koperasi Aktif</div>
+              </div>
+              <!-- end of counter-cell -->
+              <div class="counter-cell">
+                <div data-purecounter-start="0" data-purecounter-end="30017" data-purecounter-duration="3" class="purecounter">1</div>
+                <div class="counter-info">Jumlah UMKM</div>
+              </div>
+              <!-- end of counter-cell -->
+              <div class="counter-cell">
+                <div data-purecounter-start="0" data-purecounter-end="91" data-purecounter-duration="3" class="purecounter">1</div>
+                <div class="counter-info">Jumlah Industri</div>
+              </div>
+              <!-- end of counter-cell -->
+              <div class="counter-cell">
+                <div data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="3" class="purecounter">1</div>
+                <div class="counter-info">Jumlah Pasar</div>
+              </div>
+              <!-- end of counter-cell -->
+            </div>
+            <!-- end of counter-container -->
+            <!-- end of counter -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of counter -->
+    <!-- end of statistics -->
+
+
+
 <!-- Introduction -->
 <div id="introduction" class="cards-1">
   <br>

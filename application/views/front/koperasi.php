@@ -1,125 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<header class="ex-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 offset-xl-1">
+        <h1>Bidang Koperasi</h1>
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</header>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+<div class="ex-basic-1 pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 offset-xl-1">
+        <h5>TUGAS POKOK & FUNGSI BIDANG KOPERASI</h5>
+        <h5>Tugas Pokok</h5>
+        <p>Menyelenggarakan dan Menyusun petunjuk teknis dibidang kelembagaan dan diklat koperasi, pengembangan usaha koperasi dan pengawasan koperasi.</p>
+        <h5>Fungsi</h5>
+          1. Penyusunan rencana kerja Bidang Koperasi<br>
+          2. Penyusunan rencana dan program pemberdayaan dan Pengembangan Koperasi<br>
+          3. Pemberian Bimbingan teknis bagi Koperasi<br>
+          4. Penganalisaan dan penilian data kelembagaan dan pengawasan Koperasi<br>
+          5. Pelaksanaan pengaturan dan bimbingan teknis serta pengembangan usaha bagi Koperasi<br>
+          6. Penganalisaan laporan pelaksanaan bimbingan teknis, pengembangan usaha bagi Koperasi<br>
+          7. Pelaksanaan kerja sama dengan intansi terkait, pengusaha besar/swasta/BUMN untuk memperlancarkan permodalan bagi Koperasi<br>
+          8. Penyusunan petunjuk teknis dan bimbingan teknis pembinaan kelembagaan dan diklat Koperasi<br>
+          9. Penyiapan pelaksanaan bimbingan dan pengarahan metode dan program pelatihan/penyuluhan dan pemberdayaan perkoperasian<br>
+          10. Pelaksanaan penyuluhan dan publikasi perkoperasian kepada masyarakat umum dan Gerakan koperasi<br>
+          11. Pemberian bantuan penyuluhan hukum bagi pengembangan organisasi koperasi<br>
+          12. Pemberian bimbingan dan pengarahan kepada kader-kader koperasi dari kalangan Gerakan koperasi dan masyarakat<br>
+          13. Penyajian data dan informasi di bidang koperasi<br>
+          14. Penyusunan rencana kerja di bidang pengawasan dan pembinaan koperasi<br>
+          15. Pemeriksaan dan pengawasan koperasi yang wilayah keanggotaan dalam daerah kabupaten<br>
+          16. Pemeriksaan dan pengawasan koperasi simpan pinjam koperasi yang wilayah keanggotaan dalam wilayah kabupaten<br>
+          17. Pemberdayaan dan perlindungan koperasi yang keanggotaannya dalam daerah kabupaten<br>
+          18. Penyampaian telaahan staf sebagai bahan pertimbangan pengembilan kebijakan kepada dinas<br>
+          19. Penyusunan laporan hasil paleksanaan kegiatan bidang Koperasi</p>
+        <hr size="20">
+        <h5>REGULASI TENTANG KOPERASI</h5>
+        <p>1. UU No. 25 Tahun 1992 Tentang Perkoperasian <br>
+           2. PERMENKOP No. 15 Tahun 2015 USP Oleh Koperasi <br>
+           3. PERMENKOp No. 13 Tahun 2015 Akuntansi USP Oleh Koperasi <br>
+           4. PERMENKOP No. 11 Tahun 2018 Perizinan USP Koperasi <br>
+           5. PERMENKOP No. 06 Tahun 2016 Penilaian Kesehatan KSP <br>
+           6. PERMENKOP No. 19 Tahun 2015 Rapat Anggota Koperasi <br>
+           7. Salinan PP No. 07 Tahun 2021 <br>
+           8. PERMENKUMHAM No. 14 Tahun 2019 <br>
+           9. PERMENKUKM No. 09 Tahun 2020</p>
+        <hr size="20">
+        <h5>SYARAT PENDIRIAN KOPERASI</h5>
+        <hr size="20">
+        <h5>STRUKTUR ORGANISASI BIDANG KOPERASI</h5>
+        <img src="assets/img/organisasi.png" alt="organisasi" width="930">
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</div>
 
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>DKUPP KAB. SUBANG</title>
-  </head>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+  // fungsi initialize untuk mempersiapkan peta
+  function initialize() {
+    var propertiPeta = {
+      center: new google.maps.LatLng(-6.553251845982678, 107.76394081293844),
+      zoom: 9,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
 
-  <body>
-    <!--about -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>TUGAS POKOK DAN FUNGSI BIDANG KOPERASI</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col justify-content-center fs-5 text-justify">
-            <h3 class="text-center">TUGAS POKOK</h3>
-            <p>Menyelenggarakan dan menyusun petunjuk teknis di bidang kelembagaan dan diklat Koperasi, Pengembangan usaha Koperasi dan Pengawasan Koperasi</p>
-          </div>
-          <div class="col justify-content-center fs-5 text-justify">
-            <h3 class="text-center">FUNGSI</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos facilis distinctio, nobis eveniet consequuntur iure voluptates numquam autem, maxime laudantium voluptate deserunt, molestias ipsum dolor? Dolores voluptatem
-              ducimus vero molestiae?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- akhir about akhir -->
+    var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+  }
 
-    <!-- about -->
-    <section id="syarat">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>SYARAT PENDIRIAN KOPERASI</h2>
-          </div>
-        </div>
-        <div class="col justify-content-center fs-5 text-justify">
-          <ul class="text-justify">
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- akhir about akhir -->
-
-    <!-- struktur organisasi -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>STRUKTUR ORGANISASI BIDANG KOPERASI</h2><br>
-              <div class="container">
-                <div class="row">
-                  <div class="col">
-                    <h4>Kepala Bidang Koperasi</h4>
-                    <h5>Ibu Yati</h5>
-                  </div>
-              </div>
-                <div class="row">
-                  <div class="col">
-                  <h4>Kepala Seksi 1</h4>
-                  <h5>Bpk. Indra Buana</h5>
-                  </div>
-                  <div class="col">
-                  <h4>Kepala Seksi 2</h4>
-                  <h5>Bpk. Andri</h5>
-                  </div>
-                  <div class="col">
-                  <h4>Kepala Seksi 3</h4>
-                  <h5>Bpk. Asep Suryana</h5>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir struktur organisasi -->
-
-     <!-- Regulasi Koperasi -->
-     <section id="syarat">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>REGULASI KOPERASI</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Regulasi Koperasi -->
-
-    <!-- Data -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>DATA KOPERASI AKTIF</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
-</html>
+  // event jendela di-load  
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>

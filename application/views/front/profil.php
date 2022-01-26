@@ -37,7 +37,7 @@
           4. Pengelolaan Administrasi umum Meliputi urusan perencanaan, Evaluasi dan pelaporan, urusan umum dan kepegawaian, urusan keuangan dan barang daerah </p>
         <hr size="20">
         <h5>Struktur Organisasi</h5>
-        <p class="mb-4">Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered vicinity property yet. The and collecting motionless difficulty son. His hearing staying ten colonel met. Word drew six easy four dear cold deny. Fulfilled direction use continual set him propriety continued. Saw met applauded favourite deficient.</p>
+        <img src="assets/img/organisasi.png" alt="organisasi" width="930">
         <hr size="20">
         <h5>Alamat
           <p>Jln.K.S Tubun Kec.Subang Kab.Subang Jawa Barat Kode Pos 41211 <br>
