@@ -11,8 +11,8 @@ class Pasarv extends CI_Controller {
     {
         $data['title'] = 'Pasar';
 
+        $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);
-        $this->load->view('layout/header');
         $this->load->view('front/pasar');
         $this->load->view('layout/footer'); 
     }
