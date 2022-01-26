@@ -26,30 +26,30 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Bidang</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown01">
-              <li><a class="dropdown-item" href="article.html">Koperasi</a></li>
+              <li><a class="dropdown-item" href="Koperasiv">Koperasi</a></li>
               <li>
                 <div class="dropdown-divider"></div>
               </li>
-              <li><a class="dropdown-item" href="terms.html">UMKM</a></li>
+              <li><a class="dropdown-item" href="Umkmv">UMKM</a></li>
               <li>
                 <div class="dropdown-divider"></div>
               </li>
-              <li><a class="dropdown-item" href="privacy.html">Perdagangan</a></li>
+              <li><a class="dropdown-item" href="Perdaganganv">Perdagangan</a></li>
               <li>
                 <div class="dropdown-divider"></div>
               </li>
-              <li><a class="dropdown-item" href="privacy.html">Perindusrian</a></li>
+              <li><a class="dropdown-item" href="Perindusrianv">Perindusrian</a></li>
               <li>
                 <div class="dropdown-divider"></div>
               </li>
-              <li><a class="dropdown-item" href="privacy.html">Pasar</a></li>
+              <li><a class="dropdown-item" href="Pasar">Pasar</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Galeri</a>
+            <a class="nav-link" href="Galeriv">Galeri</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Produk Unggulan</a>
+            <a class="nav-link" href="Produkv">Produk Unggulan</a>
           </li>
         </ul>
       </div> <!-- end of navbar-collapse -->
