@@ -10,12 +10,12 @@ class Koperasiv extends CI_Controller
     }
     public function index()
     {
-        $data['title'] = 'Koperasi';
+        $data['judul'] = 'Koperasi';
 
+        $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);
-        $this->load->view('layout/header');
         $this->load->view('front/koperasi');
-        $this->load->view('layout/footer'); 
+        $this->load->view('layout/footer');
     }
 }
 
