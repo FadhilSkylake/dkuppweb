@@ -10,12 +10,12 @@ class Umkmv extends CI_Controller
     }
     public function index()
     {
-        $data['title'] = 'UMKM';
+        $data['judul'] = 'UMKM';
 
         $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);
         $this->load->view('front/umkm');
-        $this->load->view('layout/footer'); 
+        $this->load->view('layout/footer');
     }
 }
 

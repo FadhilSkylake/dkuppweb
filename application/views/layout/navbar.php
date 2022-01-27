@@ -38,7 +38,7 @@
               <li>
                 <div class="dropdown-divider"></div>
               </li>
-              <li><a class="dropdown-item" href="Perindusrianv">Perindusrian</a></li>
+              <li><a class="dropdown-item" href="Perindustrianv">Perindustrian</a></li>
               <li>
                 <div class="dropdown-divider"></div>
               </li>

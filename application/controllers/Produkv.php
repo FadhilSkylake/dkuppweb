@@ -1,7 +1,8 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
-        
-class Produkv extends CI_Controller {
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Produkv extends CI_Controller
+{
 
     public function __construct()
     {
@@ -9,13 +10,13 @@ class Produkv extends CI_Controller {
     }
     public function index()
     {
-        $data['title'] = 'Produk';
+        $data['judul'] = 'Produk Unggulan';
 
-        
+
         $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);
         $this->load->view('front/produk');
-        $this->load->view('layout/footer'); 
+        $this->load->view('layout/footer');
     }
 }
 

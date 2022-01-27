@@ -10,12 +10,12 @@ class Perdaganganv extends CI_Controller
     }
     public function index()
     {
-        $data['title'] = 'Perdagangan';
+        $data['judul'] = 'Perdagangan';
 
-        $this->load->view('layout/header' , $data);
+        $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);
         $this->load->view('front/perdagangan');
-        $this->load->view('layout/footer'); 
+        $this->load->view('layout/footer');
     }
 }
 
