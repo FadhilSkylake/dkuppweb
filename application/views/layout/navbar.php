@@ -3,7 +3,7 @@
     <div class="container">
 
       <!-- Image Logo -->
-      <a class="navbar-brand logo-image" href="Home"><img src="assets/img/logo.png"> DKUPP SUBANG</a><img src="assets/img/sj.png" width="50" height="50">
+      <a class="navbar-brand logo-image" href="Home"><img src="assets/img/logo.png"> WEDANG SUBANG</a><img src="assets/img/sj.png" width="50" height="50">
 
       <!-- Text Logo - Use this if you don't have a graphic logo -->
       <!-- <a class="navbar-brand logo-text" href="index.html">Desi</a> -->
@@ -42,7 +42,7 @@
               <li>
                 <div class="dropdown-divider"></div>
               </li>
-              <li><a class="dropdown-item" href="Pasar">Pasar</a></li>
+              <li><a class="dropdown-item" href="Pasarv">Pasar</a></li>
             </ul>
           </li>
           <li class="nav-item">

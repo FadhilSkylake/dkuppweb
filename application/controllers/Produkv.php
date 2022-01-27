@@ -11,8 +11,9 @@ class Produkv extends CI_Controller {
     {
         $data['title'] = 'Produk';
 
+        
+        $this->load->view('layout/header', $data);
         $this->load->view('layout/navbar', $data);
-        $this->load->view('layout/header');
         $this->load->view('front/produk');
         $this->load->view('layout/footer'); 
     }

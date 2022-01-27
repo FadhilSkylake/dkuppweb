@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="h1-large">SELAMAT DATANG DI WEBSITE DKUPP KAB.SUBANG</h1>
+          <h1 class="h1-large">DINAS KOPERASI, UMKM, PERDAGANGAN DAN PERINDUSTRIAN</h1>
           <a class="btn-solid-lg" href="#introduction">Website Resmi dari Dinas Koperasi UMKM Perdagangan dan Perindustrian Kab.Subang</a>
         </div> <!-- end of col -->
       </div> <!-- end of row -->
