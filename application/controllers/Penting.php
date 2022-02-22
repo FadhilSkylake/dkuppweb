@@ -106,15 +106,15 @@ class Penting extends CI_Controller
     public function delete($no)
     {
         $where = array('no' => $no);
-        $this->Pasar_model->delete($where, 'perdagangan_penting');
-            $this->session->set_flashdata(
-                'pesan',
-                '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        $this->Penting_model->delete($where, 'perdagangan_penting');
+        $this->session->set_flashdata(
+            'pesan',
+            '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>'
-            );
-            redirect('penting');
+        );
+        redirect('pokok');
     }
 }
 

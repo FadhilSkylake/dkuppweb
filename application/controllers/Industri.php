@@ -102,15 +102,15 @@ class Industri extends CI_Controller
     {
         $where = array('id_perusahaan' => $id_perusahaan);
         $this->Industri_model->delete($where, 'industri');
-            $this->session->set_flashdata(
-                'pesan',
-                '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        $this->session->set_flashdata(
+            'pesan',
+            '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>'
-            );
-            redirect('industri');
-}
+        );
+        redirect('industri');
+    }
 }
 
 /* End of file Industri.php and path \application\controllers\Industri.php */
