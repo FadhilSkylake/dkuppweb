@@ -107,7 +107,7 @@ class Koperasi extends CI_Controller
     //     $this->dompdf->load_html($html);
     //     $this->dompdf->render();
     //     $this->dompdf->stream('laporan_koperasi.pdf'. array('Attachment'=> 0));
-        
+
     // }
 
     public function _rules()
@@ -130,14 +130,14 @@ class Koperasi extends CI_Controller
     {
         $where = array('no' => $no);
         $this->Koperasi_model->delete($where, 'koperasi');
-            $this->session->set_flashdata(
-                'pesan',
-                '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        $this->session->set_flashdata(
+            'pesan',
+            '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>'
-            );
-            redirect('koperasi');
+        );
+        redirect('koperasi');
     }
 }
 
