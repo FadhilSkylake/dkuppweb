@@ -41,12 +41,12 @@
           <!-- Sidebar Menu -->
           <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a href="<?= base_url('dashboard') ?>" class="nav-link">
                   <i class="fas fa-tachometer-alt nav-icon"></i>
                   <p>Dashboard</p>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a href="<?= base_url('koperasi') ?>" class="nav-link">
                   <i class="fas fa-balance-scale nav-icon"></i>
@@ -97,7 +97,7 @@
               </li>
               <li class="nav-item">
                 <a href="<?= base_url('profil_set') ?>" class="nav-link">
-                  <i class="fas fa-users nav-icon"></i>
+                  <i class="fas fa-cog nav-icon"></i>
                   <p>Setting</p>
                 </a>
               </li>

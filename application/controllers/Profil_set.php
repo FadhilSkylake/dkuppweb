@@ -26,6 +26,34 @@ class Profil_set extends CI_Controller
         $this->load->view('profil_set', $data);
         $this->load->view('templates/footer');
     }
+
+    public function edit($id)
+    {
+        // $this->_rules();
+
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->index();
+        } else {
+            $data = array(
+                'id' => $id,
+                'visi' => $this->input->post('visi'),
+                'misi' => $this->input->post('misi'),
+                'tugas_pokok' => $this->input->post('tugas_pokok'),
+                'fungsi' => $this->input->post('fungsi'),
+            );
+
+            $this->Profil_model->update_data($data, 'profil_set');
+            $this->session->set_flashdata(
+                'pesan',
+                '<div class="alert alert-success alert-dismissible fade show" role="alert"> Data Berhasil Edit <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>'
+            );
+            redirect('profil_set');
+        }
+    }
 }
 
 /* End of file Profil_set.php and path \application\controllers\Profil_set.php */

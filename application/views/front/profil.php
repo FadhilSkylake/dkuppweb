@@ -17,8 +17,8 @@
           <h5>Visi</h5>
           <p><?= $set->visi ?></p>
           <h5>Misi</h5>
-          <p><?= $set->misi ?>
-          </p>
+          <li><?= $set->misi ?></li>
+          <p><?= $set->misi ?></p>
           <hr size="15">
           <h5>TUGAS POKOK & FUNGSI</h5>
           <h5>Tugas Pokok</h5>
