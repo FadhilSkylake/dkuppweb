@@ -29,7 +29,7 @@ class Profil_set extends CI_Controller
 
     public function edit($id)
     {
-        // $this->_rules();
+        //$this->_rules();
 
 
         if ($this->form_validation->run() == FALSE) {
@@ -54,6 +54,7 @@ class Profil_set extends CI_Controller
             redirect('profil_set');
         }
     }
+
 }
 
 /* End of file Profil_set.php and path \application\controllers\Profil_set.php */
