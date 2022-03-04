@@ -54,19 +54,19 @@ class Profil_set extends CI_Controller
             redirect('profil_set');
         }
     }
-    public function delete($id)
-    {
-        $where = array('id' => $id);
-        $this->Profil_model->delete($where, 'profil_front');
-        $this->session->set_flashdata(
-            'pesan',
-            '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>'
-        );
-        redirect('profil_set');
-    }
+    // public function delete($id)
+    // {
+    //     $where = array('id' => $id);
+    //     $this->Profil_model->delete($where, 'profil_front');
+    //     $this->session->set_flashdata(
+    //         'pesan',
+    //         '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Data Berhasil di Hapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    //               <span aria-hidden="true">&times;</span>
+    //             </button>
+    //           </div>'
+    //     );
+    //     redirect('profil_set');
+    // }
 }
 
 /* End of file Profil_set.php and path \application\controllers\Profil_set.php */
