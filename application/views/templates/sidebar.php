@@ -47,15 +47,29 @@
                   <p>Dashboard</p>
                 </a>
               </li> -->
-              <li class="nav-item">
-                <a href="<?= base_url('koperasi') ?>" class="nav-link">
+              <li class="nav-item has-treeview menu-close">
+                <a href="" class="nav-link">
                   <i class="fas fa-balance-scale nav-icon"></i>
-                  <p>Koperasi</p>
+                  <p>
+                    Koperasi
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
                 </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="<?= base_url('Koperasi') ?>" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Data</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Setting Koperasi</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
-
-
-
               <li class="nav-item has-treeview menu-close">
                 <a href="" class="nav-link">
                   <i class="fas fa-chart-line nav-icon"></i>
@@ -79,23 +93,74 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a href="<?= base_url('industri') ?>" class="nav-link">
+              <li class="nav-item has-treeview menu-close">
+                <a href="" class="nav-link">
                   <i class="fas fa-industry nav-icon"></i>
-                  <p>Industri</p>
+                  <p>
+                    Industri
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
                 </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="<?= base_url('industri') ?>" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Data</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Setting Industri</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a href="<?= base_url('umkm') ?>" class="nav-link">
+              <li class="nav-item has-treeview menu-close">
+                <a href="" class="nav-link">
                   <i class="fas fa-cookie-bite nav-icon"></i>
-                  <p>UMKM</p>
+                  <p>
+                    UMKM
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
                 </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="<?= base_url('umkm') ?>" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Data</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Setting UMKM</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a href="<?= base_url('pasar') ?>" class="nav-link">
+              <li class="nav-item has-treeview menu-close">
+                <a href="" class="nav-link">
                   <i class="fas fa-shopping-bag nav-icon"></i>
-                  <p>Pasar</p>
+                  <p>
+                    Pasar
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
                 </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="<?= base_url('pasar') ?>" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Data</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Setting Pasar</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a href="<?= base_url('profil_set') ?>" class="nav-link">
