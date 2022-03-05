@@ -19,7 +19,7 @@
                 foreach ($profil as $set) : ?>
                     <tr>
                         <td><?= $id++ ?></td>
-                        <td><?= $set->visi ?></td>
+                        <td><pre><?= $set->visi ?></pre></td>
                         <td><?= $set->misi ?></td>
                         <td><?= $set->tugas_pokok ?></td>
                         <td><?= $set->fungsi ?></td>
@@ -48,18 +48,18 @@
                 </tr>
             </thead>
             <tbody>
-                <?php $id = 1;
-                foreach ($profil as $set) : ?>
-                    <tr>
+                <!-- <?php $id = 1;
+                foreach ($profil as $set) : ?> -->
+                    <!-- <tr>
                         <td><?= $id++ ?></td>
                         <td><?= $set->visi ?></td>
                         <td><?= $set->misi ?></td>
                         <td><?= $set->tugas_pokok ?></td>
                         <td><?= $set->fungsi ?></td>
-                        <td>
-                            <button data-toggle="modal" data-target="#edit<?= $set->id ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></button>
-                            <a href="<?= base_url('Profil_set/delete/' . $set->id) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')"><i class="fas fa-trash"></i></a>
-                        </td> -->
+                        <td> -->
+                            <!-- <button data-toggle="modal" data-target="#edit<?= $set->id ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></button>
+                            <a href="<?= base_url('Profil_set/delete/' . $set->id) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')"><i class="fas fa-trash"></i></a> -->
+                        </td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
