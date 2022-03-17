@@ -17,10 +17,8 @@
           <h5>Visi</h5>
           <p><?= $set->visi ?></p>
           <h5>Misi</h5>
-          <li><?= $set->misi ?></li>
-          <p><?= $set->misi ?></p>
+          <p><?= nl2br(htmlspecialchars($set->misi)) ?></p>
           <hr size="15">
-          <h5>TUGAS POKOK & FUNGSI</h5>
           <h5>Tugas Pokok</h5>
           <p><?= $set->tugas_pokok ?></p>
           <h5>Fungsi</h5>

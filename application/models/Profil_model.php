@@ -5,6 +5,7 @@ class Profil_model extends CI_Model
 {
     public function get_data($table)
     {
+        // return $this->db->get(htmlspecialchars(nl2br($table)));
         return $this->db->get($table);
     }
     public function insert_data($data, $table)
