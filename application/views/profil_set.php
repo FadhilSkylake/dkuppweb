@@ -20,9 +20,7 @@
                     <tr>
                         <td><?= $id++ ?></td>
                         <td><?= $set->visi ?></td>
-                        <td>
-                            <pre><?= $set->misi ?></pre>
-                        </td>
+                        <td><?= nl2br(htmlspecialchars($set->misi)) ?></td>
                         <td><?= $set->tugas_pokok ?></td>
                         <td><?= $set->fungsi ?></td>
                         <td>
